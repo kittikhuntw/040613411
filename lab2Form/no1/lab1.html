@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+
+    <style>
+        table,
+        td {
+            border: 2px solid #7eb558;
+            border-collapse: collapse;
+            padding: 5px 10px 5px 10px;
+        }
+
+        td {
+            height: 50px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #d5e3cf;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ebf1e9;
+        }
+
+        td:nth-child(3) {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div style="display:flex;justify-content: center;">
+        <table>
+            <tr>
+                <td></td>
+                <td style="text-align: center;">ตัวอย่างข้อมูล</td>
+                <td><strong>Input type ?</strong></td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>ชื่อเต็ม/ย่อของสาขาวิชา</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>จำนวนเงินที่จะโอน</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</td>
+                <td>
+                    <input type="radio" name="5" checked>5
+                    <input type="radio" name="4">4
+                    <input type="radio" name="3">3
+                    <input type="radio" name="2">2
+                    <input type="radio" name="1">1
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>รหัสบัตรประชาชน</td>
+                <td><input type="tel" pattern="[\d]-[\d]{4}-[\d]{5}-[\d]{2}-\d"></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>ความพึงพอใจของหนังสือเล่มนี้</td>
+                <td>ไม่พอใจ<input type="range">พอใจมาก</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>อาการป่วย</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>ในช่วง 3 เดือนที่ผ่านมาได้รับวัคซีนหรือไม่</td>
+                <td>
+                    <input type="radio" name="vac" checked>ได้รับวัคซีน
+                    <input type="radio" name="unvac">ไม่ได้รับวัคซีน
+                </td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>รหัสผ่าน</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</td>
+                <td>
+                    เวลาเริ่มเข้าเรียน : <input type="time">
+                    สิ้นสุดเวลาเรียน : <input type="time">
+                </td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>วันเวลาที่ต้องไปพบแพทย์</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

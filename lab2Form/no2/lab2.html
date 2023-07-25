@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <h2>แบบฟอร์มจองทัวร์</h2>
+            <fieldset>
+                <legend>ข้อมูลทั่วไป</legend>
+                ชื่อ-สกุล:<br>
+                <input type="text" placeholder="กรอกชื่อ-สกุล">*<br>
+                Email:<br>
+                <input type="text" pattern="[\w]+@[\D]+\.com">*<br>
+                โทรศัพท์:<br>
+                <input type="tel" value="+66 " pattern="\+66 ([\d]{9}|[\d]{8})">*<br>
+                ที่อยู่:<br>
+                <textarea rows="3" cols="30"></textarea>
+                <br>
+                รหัสไปรษณีย์:<input size="5" pattern="\d{5}">
+                รูปผู้จอง: <input type="file">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>ข้อมูลเข้าสู่ระบบ</legend>
+                Username:<br>
+                <input type="text"  pattern="[\w]{8,}"><br>
+                <a><em>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</em></a>
+                <br><br>
+                Password:<br>
+                <input type="text" pattern="[\s]{8,}"><br>
+                <a><em>ประกอบด้วยตัวอักขระอะไรก็ได้ 8 ตัวขึ้นไป</em></a>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+                แพคเกจทัวร์:
+                <select>
+                    <option>--select--</option>
+                    <option>โคลอมเบีย</option>
+                    <option>ญี่ปุ่น</option>
+                    <option>เกาหลี</option>
+                    <option>ฝรั่งเศส</option>
+                    <option>อังกฤษ</option>
+                </select><br>
+                วันที่เดินทาง:<input type="datetime-local"><br>
+                จำนวนผู้เดินทาง:<input type="number" max="10" min="1"><br>
+                เน้นการท่องเที่ยวแบบใด?<br>
+                <input type="checkbox">ชอปปิ้ง<br>
+                <input type="checkbox">ธรรมชาติ<br>
+                <input type="checkbox">ทะเล<br>
+            </fieldset>
+            <p>ยอมรับเงื่อนไขและข้อตกลง</p>
+            <input type="radio" name="deal" checked="checked"><label>I agree</label>
+            <input type="radio" name="deal"><label>I disagree</label>
+            <input type="submit" value="จอง">
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
