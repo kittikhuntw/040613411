@@ -1,0 +1,198 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun&family=Vast+Shadow&display=swap');
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Sarabun', cursive;
+	
+}
+
+
+body {
+	height: 900px;
+}
+
+.container{
+	margin: 5%;
+}
+
+header {
+	background: url('img/conifer-needles-ice-cubes.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 15%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .overlay {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+	background-image: linear-gradient(135deg, #02640f6b 10%, #00d17a69 100%);
+
+}
+
+h1 {
+	font-size: 80px;
+	margin-bottom: 30px;
+
+}
+
+h3,
+p {
+	margin-bottom: 30px;
+}
+
+.about {
+	margin: auto;
+	max-width: 80em;
+}
+
+
+.image img {
+	height: auto;
+	width: 400px;
+	box-shadow: 20px 20px grey;
+}
+
+.grid {
+	display: grid;
+	background-color: light-grey;
+	padding: 0 130px;
+	grid-template-columns: 0fr 1fr;
+	
+}
+
+.grid .text {
+	padding: 10px 100px 50px;
+}
+
+.text span {
+	padding-bottom: 40px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.text p {
+	margin-top: 20px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1.4;
+
+}
+
+.square-left{
+	display: flex;
+	justify-content: space-between;
+	background: rgb(253, 253, 253);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin-top: 4%;
+  position: relative;
+  
+}
+.square-left p{
+	display: flex;
+	padding-left: 20px;
+}
+.square-left span{
+	padding-left: 20px;
+}
+
+.square-left .images img {
+	height: auto;
+	width: 400px;
+	
+}
+
+
+.square-right{
+	display: flex;
+	justify-content: space-between;
+	background: rgb(253, 253, 253);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin-top: 4%;
+  padding-left: 20px;
+  position: relative;
+}
+
+
+.square-right span{
+	padding-left: 10px;
+}
+
+.square-right p{
+	display: flex;
+	padding-left: 20px;
+}
+.square-right .images img {
+	height: auto;
+	width: 400px;
+	float: right;	
+}
+
+.text{
+	margin-top: 20px;
+}
+span.herb{
+	margin-top: 20px;
+	padding: 5px;
+	font-size: 18px
+}
+
+.square-left .circle {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #333;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: -0.5em;
+	left: -0.5em;
+	position: absolute;
+	text-transform: uppercase;
+	white-space: nowrap;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: 'Vast Shadow', cursive;
+	color: #24724B;
+  }
+
+  .square-right .circle {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #333;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: -0.5em;
+	right: -0.5em;
+	position: absolute;
+	text-transform: uppercase;
+	white-space: nowrap;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: 'Vast Shadow', cursive;
+	color: #24724B;
+  }
