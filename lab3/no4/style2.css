@@ -1,0 +1,10 @@
+
+table,th{
+    border:1px solid black;
+  }
+tr:hover{
+    background-color: lightblue;
+}
+tr th:last-child{
+    text-align: left;
+}
