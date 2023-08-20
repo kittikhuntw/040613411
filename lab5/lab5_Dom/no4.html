@@ -1,0 +1,29 @@
+<html>
+    <style>
+        a{
+            color: red;
+        }
+    </style>
+    <head>
+        <script>
+           function countTheWord(str){
+            var res = str.split(' ')
+            console.log(res)
+            var num = 0;
+            for(let i=0;i<res.length;i++){
+                if(res[i]=='the' || res[i]=='The'){
+                    num = num + 1;
+                }
+            }
+
+            alert("มี The ทั้งหมด "+ num +" คำ")
+           }
+        </script>
+    </head>
+    <body>
+        The eight ruler of the Fifth Dynasty in the late 25th cuntury. <br><br>
+        <a herf="#" onclick="countTheWord('The eight ruler of the Fifth Dynasty in the late 25th cuntury.')">
+            Click for count 'the'
+        </a>
+    </body>
+</html>

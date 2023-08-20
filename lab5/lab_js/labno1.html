@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            }
+        ]
+
+        for(let i =0 ;i<student.length;i++){
+            // if(student[i].gpa > 3.2 || (student[i].gpa > 2.75 && student[i].help == true)){
+                console.log(student[i].fullname,"เกิดเมื่อ",(2566-student[i].age).toString(),(student[i].gpa > 3.2 || (student[i].gpa > 2.75 && student[i].help == true))?"ได้ทุนการศึกษา": "ไม่ได้ทุนการศึกษา"
+                ,"เนื่องจาก",(student[i].gpa >3.2 ? "เกรดเฉลี่ยถึงเกณฑ์" :"เกรดเฉลี่ยไม่ถึงเกณฑ์"),(student[i].help == true ? "และยังช่วยงานภาควิชาด้วย" :"และไม่ยังช่วยงานภาควิชา"))
+            // }
+        }
+        for(let i=0;i<student.length;i++){
+            console.log("ชั้นปีที่ ",i+1)
+            if(student[i].gpa > 3.2 || (student[i].gpa > 2.75 && student[i].help == true)){
+                
+                console.log(student[i].fullname,"เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+            }
+            else{
+                console.log("ไม่มี")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

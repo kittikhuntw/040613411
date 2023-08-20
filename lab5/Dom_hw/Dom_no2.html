@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function color(){
+ var input = document.getElementById('name');
+ input.style.color = 'green';
+}
+function color1(){
+ var input = document.getElementById('age');
+ input.style.color = 'green';
+}
+function color2(){
+ var input = document.getElementById('date');
+ input.style.color = 'green';
+}
+        
+    </script>
+</head>
+<body>
+    <b>Name : </b><input type="text" id="name" onmouseleave="color()"></input><br>
+    <b>Age : </b><input type="number" id="age"onmouseleave="color1()"></input><br>
+    <b>Birthdate : </b><input type="text" id="date"onmouseleave="color2()"></input>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+
+<p>Use the HTML DOM to assign an "onmouseover" and "onmouseout" event to a h1 element.</p>
+
+<h1 id="demo">Mouse over me</h1>
+
+<script>
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+</script>
+
+</body>
+</html> -->

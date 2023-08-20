@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function plus(){
+            var i1 = parseFloat(document.getElementById("i1").value)
+            var i2 = parseFloat(document.getElementById("i2").value)
+            var opr = document.getElementById("opr").value
+
+            if(opr == "+"){
+                var ans = i1 + i2;
+            }else if(opr == "-"){
+                var ans = i1-i2;
+            }else if(opr == "*"){
+                var ans = i1*i2;
+            }else if(opr == "/"){
+                var ans = i1/i2;
+            }
+            var a = document.getElementById("ans")
+            a.value = ans;
+        }
+    </script>
+</head>
+    <body >
+        <input type="number" id="i1">
+        <select id="opr">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="i2">
+        = <input type="number" id="ans">
+        <button onclick="plus()">Go GO</button>
+    </body>
+</html>
