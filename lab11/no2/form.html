@@ -1,0 +1,26 @@
+<html><head><meta charset="utf-8">
+    <script>
+        var xmlHttp;
+    
+        function send() {
+            xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = showResult;
+    
+            var username = document.getElementById("username").value;
+            var url= "search.php?username=" + username;
+           
+           xmlHttp.open("GET", url);
+           xmlHttp.send();   
+       }
+       function showResult() {
+           if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+               document.getElementById("result").innerHTML = xmlHttp.responseText;
+           }
+       }
+    </script></head>
+    <body>
+      ค้นหาคน<input type="text" onkeyup="send()"  id="username">
+         <span id="result"></span>
+    </body></html>
+    
+    

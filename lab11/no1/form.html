@@ -1,0 +1,30 @@
+<html><head><meta charset="utf-8">
+    <script>
+        var xmlHttp;
+    
+        function send() {
+            xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = showResult;
+    
+            var mango = document.getElementById("mango").value;
+            var orange = document.getElementById("orange").value;
+            var banana = document.getElementById("banana").value;
+            var url= "add.php?mango=" + mango + "&orange=" + orange +"&banana="+ banana;
+           
+           xmlHttp.open("GET", url);
+           xmlHttp.send();   
+       }
+       function showResult() {
+           if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+               document.getElementById("result").innerHTML = xmlHttp.responseText;
+           }
+       }
+    </script></head>
+    <body>
+        มะม่วง กก. ละ 30 บาท ขายได้<input type="text" onchange="send()"  id="mango">กก.<br>
+        ส้ม กก. ละ 70 บาท ขายได้<input type="text" onchange="send()"  id="orange">กก.<br>
+        กล้วย หวี ละ 30 บาท ขายได้<input type="text" onchange="send()" id="banana">หวี<br>
+         <span id="result"></span>
+    </body></html>
+    
+    
